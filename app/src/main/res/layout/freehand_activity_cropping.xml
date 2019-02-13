@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/startDraw" android:background="@drawable/leftbluecirclebg_eight" android:clickable="true" android:layout_width="70.0dip" android:layout_height="32.0dip" android:text="Draw" />
+            <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/startMove" android:background="@drawable/rightcirclebg_ten" android:clickable="true" android:layout_width="70.0dip" android:layout_height="32.0dip" android:text="Adjust" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/containerBody" android:background="#ff323e4e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="45.0dip" android:layout_marginBottom="120.0dip">
+        <RelativeLayout android:id="@id/body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip">
+            <jp.itnav.freehandcropsample.FreeHandCrop.FreeHandScaleImageView android:id="@id/image" android:background="@drawable/transgrid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pressAndDraw" android:background="@drawable/circuler_selector" android:visibility="gone" android:clickable="true" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="15.0dip">
+                <View android:background="@drawable/cancel_bg" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/button_selector" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="65.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0sp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dPath" android:background="@drawable/tranparent_selector" android:visibility="gone" android:clickable="true" android:layout_width="75.0dip" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:text="Draw Path" android:onClick="onDrawPath" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="60.0dip" android:weightSum="12.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/Crop" android:background="@drawable/button_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" android:onClick="onCrop">
+            <ImageView android:layout_width="40.0dip" android:layout_height="30.0dip" android:src="@drawable/done" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Done" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/Undo" android:background="@drawable/button_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" android:onClick="onUndo">
+            <ImageView android:id="@id/undoIMG" android:layout_width="40.0dip" android:layout_height="30.0dip" android:src="@drawable/d_undo" />
+            <TextView android:textColor="#ffc2c2c2" android:id="@id/undoTXT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Undo" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/Redo" android:background="@drawable/button_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" android:onClick="onRedo">
+            <ImageView android:id="@id/RedoIMG" android:layout_width="40.0dip" android:layout_height="30.0dip" android:src="@drawable/d_redo" />
+            <TextView android:textColor="#ffc2c2c2" android:id="@id/RedoTXT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Redo" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/handDraw" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/crop_image" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone" />
+</RelativeLayout>

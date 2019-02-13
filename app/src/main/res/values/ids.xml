@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="containerBody"/>
+    <item type="id" name="body"/>
+    <item type="id" name="header"/>
+
+    <item type="id" name="undoIMG"/>
+    <item type="id" name="undoTXT"/>
+    <item type="id" name="Crop"/>
+
+    <item type="id" name="pressAndDraw"/>
+    <item type="id" name="dPath"/>
+    <item type="id" name="Undo"/>
+    <item type="id" name="Redo"/>
+    <item type="id" name="RedoTXT"/>
+    <item type="id" name="RedoIMG"/>
+    <item type="id" name="handDraw"/>
+    <item type="id" name="startDraw"/>
+    <item type="id" name="startMove"/>
+    <item type="id" name="image"/>
+    <item type="id" name="crop_image"/>
+
+</resources>

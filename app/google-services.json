@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "451201677135",
+    "firebase_url": "https://dr-ac-92a21.firebaseio.com",
+    "project_id": "dr-ac-92a21",
+    "storage_bucket": "dr-ac-92a21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451201677135:android:db24186457242b58",
+        "android_client_info": {
+          "package_name": "jp.itnav.freehandcropsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451201677135-mr91fpv4aj0qp58ahh4553dkljdelr9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7o-sGCkSfPCwzdYkJ58WsiflE1hjo42U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451201677135:android:5c029e9072533410",
+        "android_client_info": {
+          "package_name": "com.spryox.drairconditionar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451201677135-mr91fpv4aj0qp58ahh4553dkljdelr9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7o-sGCkSfPCwzdYkJ58WsiflE1hjo42U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
